@@ -9,10 +9,13 @@ function verificar(){
         var fsex = document.getElementsByName('radsex')
         var idade = ano - Number(fano.value)
         var genero = ''
+        
         if(fsex[0].checked){
-            genero = 'Homem'
-            if (idade >=0 && idade < 5){
+            genero = 'Homen'
+            if (idade < 5){
                 //bebe
+                genero = 'um bebê'
+                img.setAttribute('src', 'imagens/bebeMenino.png')
             }else if (idade < 13){
                 //criança
             }else if (idade < 20){
@@ -42,5 +45,6 @@ function verificar(){
         }
         res.style.textAlign = 'center'
         res.innerHTML = `Detectamos ${genero} com ${idade} anos`
+        res.appendChild(img)
     }
 }
