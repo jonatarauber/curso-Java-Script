@@ -3,4 +3,8 @@ do {
     console.log(`passo ${c}`)
     c++
 }while(c <=6)
-var b = 6
+
+while(c >=0){
+    console.log(`passo ${c}`)
+    c--
+}
