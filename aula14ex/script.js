@@ -13,10 +13,15 @@ function contar(){
     }if (p < 0){
         alert('Passos invalido! Considerando 1 passo')
         p= 1
-    }if (i < f){
+    }
+    if (i < f){
         for(var c = i; c <= f; c += p){
-            res.innerHTML = `\u{1F449}${c}`
+            res.innerHTML += `\u{1F449}${c}`
+        }
+    }else {
+        for(c = i; c >= f; c-= p){
+            res.innerHTML += `\u{1F449}${c}`
         }
     }
-
+    res.innerHTML += `\u{1F3C1}`
 }
