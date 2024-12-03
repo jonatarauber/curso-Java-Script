@@ -10,7 +10,7 @@ function contar(){
         var i = Number(inicio.value)
         var f = Number(fim.value)
         var p = Number(passos.value)
-    }if (p < 0){
+    }if (p <= 0){
         alert('Passos invalido! Considerando 1 passo')
         p= 1
     }
